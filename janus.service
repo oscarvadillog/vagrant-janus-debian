@@ -10,9 +10,9 @@
 # Description:       Janus
 ### END INIT INFO
 
-DAEMON=/usr/sbin/janus
+DAEMON=/opt/janus/usr/sbin/janus
 DAEMON_NAME=janus
-DAEMON_OPTS="-Do -C /etc/$DAEMON_NAME/janus.cfg -F /etc/$DAEMON_NAME"
+DAEMON_OPTS="-Do -C /opt/janus/etc/$DAEMON_NAME/janus.cfg -F /etc/$DAEMON_NAME"
 DAEMON_USER=root
 PIDFILE=/var/run/$DAEMON_NAME.pid
 export LD_LIBRARY_PATH=/usr/lib64
