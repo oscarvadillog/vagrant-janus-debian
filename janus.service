@@ -10,10 +10,11 @@
 # Description:       Janus
 ### END INIT INFO
 
-DAEMON=/opt/janus/usr/sbin/janus
+DAEMON=/opt/janus/bin/janus
 DAEMON_NAME=janus
-DAEMON_OPTS="-Do -C /opt/janus/etc/$DAEMON_NAME/janus.cfg -F /etc/$DAEMON_NAME"
+DAEMON_OPTS="-Do -C /opt/janus/etc/$DAEMON_NAME/janus.cfg -F /opt/janus/etc/$DAEMON_NAME"
 DAEMON_USER=root
+LOG_FILE=/var/log/janus.log
 PIDFILE=/var/run/$DAEMON_NAME.pid
 export LD_LIBRARY_PATH=/usr/lib64
 . /lib/lsb/init-functions
